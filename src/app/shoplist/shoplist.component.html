@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Category</th>
+      <th scope="col">Prise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let shopitem of shopitems">
+      <td>{{shopitem.name}}</td>
+      <td>{{shopitem.category}}</td>
+      <td>{{shopitem.prise}}</td>
+    </tr>
+  </tbody>
+</table>

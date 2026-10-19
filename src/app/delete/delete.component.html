@@ -1,0 +1,4 @@
+<select class="form-select" [(ngModel)]="shopitem">
+    <option class="form-select" [ngValue]="shopitem" *ngFor="let shopitem of shopitems">{{shopitem.name}}</option>
+</select> <br>
+<button class="btn btn-danger btn-sm mb-2" (click)="delete()">Törlés</button>

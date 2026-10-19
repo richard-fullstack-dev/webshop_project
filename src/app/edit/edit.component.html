@@ -1,0 +1,10 @@
+<select class="form-select" [(ngModel)]="shopitem">
+    <option [ngValue]="shopitem" *ngFor="let shopitem of shopitems">{{shopitem.name}}</option>
+</select> <br>
+
+<div *ngIf="shopitem.name !==''">
+    <input class="form-control" placeholder="Termék neve..." type="text" [(ngModel)]="shopitem.name"> <br>
+    <input class="form-control" placeholder="Termék kategória..." type="text" [(ngModel)]="shopitem.category"> <br>
+    <input class="form-control mb-2" placeholder="Termék ára..." type="number" [(ngModel)]="shopitem.prise"> <br>
+    <button class="btn btn-warning btn-sm" (click)="edit()">Szerkesztés</button>
+</div>
